@@ -201,6 +201,11 @@ legend {
 	margin-left: auto;
 	margin-right: auto;
 }
-.space {
-	margin-top: 5% !important;
+
+footer {
+	margin-bottom: -20%;
+	margin-top: 1%;
+	background-color: #383838;
+	font-size: small;
+	padding: 1%;
 }
