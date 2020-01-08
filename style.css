@@ -5,7 +5,7 @@
 body {
 	font-family: "Times New Roman", Times, serif !important;
 	color: white !important;
-	font-size: 120% !important;
+	font-size: 1.25vw !important;
 	margin-top: 1% !important;
 	margin-bottom: 20% !important;
 	/* hintergrundverlauf */
@@ -15,6 +15,11 @@ body {
 
 h1 {
 	text-align: center !important;
+	font-size: 3vw !important;
+}
+
+h2 {
+	font-size: 2vw !important;
 }
 
 img {
@@ -85,7 +90,7 @@ li {
 
 /* mercedes hintergrund */
 .hg	{
-	padding: 12%;
+	padding: 14%;
 	background-image: url("img/schnauze.jpg");	
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -114,6 +119,7 @@ li {
 /* CONTAINER*/
 content .container	{
 	background-color: #696969 !important;
+	margin-top: 10% !important;
 	padding: 2% !important;
 	/* innerer schatten für verlauf-effekt */
 	-webkit-box-shadow: inset 0px 0px 39px -10px rgba(71,71,71,1);
@@ -138,21 +144,25 @@ content .container	{
 
 .content {
 	padding-top: 3% !important;
+	padding-bottom: 3% !important;
+	height: 100% !important;
 }
 
 legend {
-	font-size: 120% !important;
+	font-size: 1.6vw !important;
+}
+.about h2 {
+	margin-top: 1%;
 }
 
 .about .container legend {
 	margin-left: 4.5%;
-	color: black;
 }
 
 .info {
 	margin-top: 1.5%;
 	color: #383838;
-	font-size: 70%;
+	font-size: 1vw;
 }
 
 
@@ -216,9 +226,13 @@ legend {
 
 footer {
 	margin-bottom: -20%;
-	margin-top: 1%;
+	margin-top: 10%;
 	background-color: #383838;
-	font-size: 75%;
+	font-size: 1vw;
 	padding-top: 1%;
 	padding-left: 1%;
+}
+
+footer h4 {
+	font-size: 2vw;
 }
