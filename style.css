@@ -5,7 +5,7 @@
 body {
 	font-family: "Times New Roman", Times, serif !important;
 	color: white !important;
-	font-size: large !important;
+	font-size: 120% !important;
 	margin-top: 1% !important;
 	margin-bottom: 20% !important;
 	/* hintergrundverlauf */
@@ -141,8 +141,20 @@ content .container	{
 }
 
 legend {
-	font-size: large !important;
+	font-size: 120% !important;
 }
+
+.about .container legend {
+	margin-left: 4.5%;
+	color: black;
+}
+
+.info {
+	margin-top: 1.5%;
+	color: #383838;
+	font-size: 70%;
+}
+
 
 /* FUNKTIONEN */
 /* ändern der bilder bei mousehover */
@@ -206,6 +218,7 @@ footer {
 	margin-bottom: -20%;
 	margin-top: 1%;
 	background-color: #383838;
-	font-size: small;
-	padding: 1%;
+	font-size: 75%;
+	padding-top: 1%;
+	padding-left: 1%;
 }
