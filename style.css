@@ -5,32 +5,23 @@
 body {
 	font-family: "Times New Roman", Times, serif !important;
 	color: white !important;
-	font-size: 1.25vw !important;
-	margin-top: 1% !important;
+	font-size: 100% !important;
+	margin: 1% !important;
 	margin-bottom: 20% !important;
 	/* hintergrundverlauf */
 	background: linear-gradient(20deg, white, #383838, #383838) no-repeat !important;
-	background-size: 100% !important;
 }
 
 h1 {
 	text-align: center !important;
-	font-size: 3vw !important;
 }
 
-h2 {
-	font-size: 2vw !important;
-}
-
-img {
+img, video {
 	width: 100% !important;
 }
+
 produkte .container img {
 	display: block !important;
-}
-
-video {
-	width: 100%;
 }
 
 a {
@@ -45,8 +36,8 @@ li {
 /* NAVIGATION: */
 .navbar {	
 	background-color: #383838 !important;
+	margin: -1% !important;
 	margin-top: -6% !important;
-	margin-right: auto !important;
 	padding: 1% !important;
 	width: 100% !important;
 	z-index: 100 !important;
@@ -70,7 +61,6 @@ li {
 
 /* dropdown */
 .dropdown-menu, .dropdown-item {
-	background-color: #383838 !important;
 	background-color: #383838 !important;
 	color: white !important;
 }
@@ -97,9 +87,11 @@ li {
 	background-position: center;
 	box-shadow: 5% 5% #383838 !important;
 	position: relative;
-	margin-top: 6%;
-	margin-bottom: 5%;
+	margin: 0% !important;
+	margin-top: 6% !important;
+	margin-bottom: 5% !important;
 	z-index: 1 !important;
+	width: 100% !important;
 }
 .hg:before	{
 	/* verblassen */
@@ -119,6 +111,7 @@ li {
 /* CONTAINER*/
 content .container	{
 	background-color: #696969 !important;
+	margin: auto !important;
 	margin-top: 10% !important;
 	padding: 2% !important;
 	/* innerer schatten für verlauf-effekt */
@@ -149,7 +142,7 @@ content .container	{
 }
 
 legend {
-	font-size: 1.6vw !important;
+	font-size: 80% !important;
 }
 .about h2 {
 	margin-top: 1%;
@@ -162,7 +155,7 @@ legend {
 .info {
 	margin-top: 1.5%;
 	color: #383838;
-	font-size: 1vw;
+	font-size: 1%;
 }
 
 
@@ -225,14 +218,11 @@ legend {
 }
 
 footer {
-	margin-bottom: -20%;
+	margin: -1%;
+	margin-bottom: -21%;
 	margin-top: 10%;
 	background-color: #383838;
-	font-size: 1vw;
+	font-size: 90%;
 	padding-top: 1%;
 	padding-left: 1%;
-}
-
-footer h4 {
-	font-size: 2vw;
 }
