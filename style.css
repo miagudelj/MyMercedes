@@ -5,7 +5,6 @@
 body {
 	font-family: "Times New Roman", Times, serif !important;
 	color: white !important;
-	font-size: 100% !important;
 	margin: 1% !important;
 	margin-bottom: 20% !important;
 	/* hintergrundverlauf */
@@ -31,6 +30,16 @@ a {
 
 li {
 	list-style: none;
+}
+
+legend {
+	padding: 0% !important;
+	font-size: 75% !important;
+}
+
+.info {
+	color: black !important;
+	font-size: 60% !important;	
 }
 
 /* NAVIGATION: */
@@ -110,6 +119,7 @@ li {
 
 /* CONTAINER*/
 .container	{
+	font-size: 120% !important;
 	background-color: #696969 !important;
 	margin: auto !important;
 	margin-top: 10% !important;
@@ -126,47 +136,92 @@ li {
 	padding-right: auto !important;
 	padding-bottom: 1% !important;
 }
+.about .col-4 {
+	margin-top: 2% !important;
+}
 
+footer {
+	margin: -1%;
+	margin-bottom: -21%;
+	margin-top: 10%;
+	background-color: #383838;
+	font-size: 90%;
+	padding-top: 1%;
+	padding-left: 1%;
+}
 
 /* FUNKTIONEN */
 /* ändern der bilder bei mousehover */
 .hovereffect {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  cursor: default;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	cursor: default;
 }
+.about .hovereffect {
+	text-align: center;
+}
+
 .hovereffect .overlay {
-  position: absolute;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  left: 0%;
-  top: 0%;
+	position: absolute;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	left: 0%;
+	top: 0%;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	-ms-transform: scale(0,1);
+	transform: scale(0,1);
+}
+.about .hovereffect .overlay {
+	width: 100%;
+	height: 80%;
+	bottom: 10%;
+	top: 10%;
+	border-bottom: 1px solid #FFF;
+	border-top: 1px solid #FFF;
+}
+
+.hovereffect:hover .overlay {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+}
+.about .hovereffect:hover .overlay {
+	filter: alpha(opacity=100);
+}
+
+.hovereffect img {
+	display: block;
+	position: relative;
+	-webkit-transition: all 0.35s;
+	transition: all 0.35s;
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 0%;
+  opacity: 0;
+  filter: alpha(opacity=0);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: scale(0,1);
-  -ms-transform: scale(0,1);
-  transform: scale(0,1);
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
 }
-.hovereffect:hover .overlay {
-  opacity: 1;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
+
+.hovereffect:hover img, .hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h4 {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 }
-.hovereffect img {
-  display: block;
-  position: relative;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
-}
-.hovereffect:hover img {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+.about .hovereffect:hover img {
+	filter: brightness(0.6);
+	-webkit-filter: brightness(0.6);
 }
 
 /* slidebar */
@@ -181,14 +236,4 @@ li {
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-footer {
-	margin: -1%;
-	margin-bottom: -21%;
-	margin-top: 10%;
-	background-color: #383838;
-	font-size: 90%;
-	padding-top: 1%;
-	padding-left: 1%;
 }
