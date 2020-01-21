@@ -64,12 +64,15 @@ legend {
 /* home brand */
 .navbar-brand {
 	border-radius: 50% !important;
-	width: 6% !important;
+	width: 12vw !important;
+	max-width: 110px;
+	/* 55 px ist genug für kleinere Displays */
+	min-width: 55px;
 }
 
 /* navigation items  */
 .nav-item	{
-	border-right: solid gainsboro 1px !important;
+	/*border-right: solid gainsboro 1px !important;*/
 }
 .nav-item:hover	{
 	background-color: black;
@@ -93,6 +96,14 @@ legend {
 #active	{
 	border: solid lightgrey 3px !important;
 	border-radius: 12% !important;
+}
+
+/* Menubar wird mit drei divs dargestellt */
+.menu-bar {
+	 height: 5px;
+	width: 30px;
+  background-color: white;
+  margin: 4px 1px;
 }
 
 /* mercedes hintergrund */
@@ -131,11 +142,16 @@ legend {
 	background-color: #696969 !important;
 	margin: auto !important;
 	margin-top: 10% !important;
-	padding: 2% !important;
+	padding: 10px 10px 10px 10px;
 	/* innerer schatten für verlauf-effekt */
 	-webkit-box-shadow: inset 0px 0px 39px -10px rgba(71,71,71,1);
 	-moz-box-shadow: inset 0px 0px 39px -10px rgba(71,71,71,1);
 	box-shadow: inset 0px 0px 39px -10px rgba(71,71,71,1);
+}
+
+/* BILDER */
+.content{
+	margin: 2vw 2vw 2vw 2vw;
 }
 
 .col, .col-1, .col-2, .col-3, .col-4,
@@ -254,4 +270,8 @@ footer {
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.font-size-18pt {
+	font-size: 18pt;
 }
