@@ -37,6 +37,14 @@ legend {
 	font-size: 75% !important;
 }
 
+.home .col-5 {
+	/* Silberntrennung */
+	-moz-hyphens: auto;
+	-o-hyphens: auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}
 .info {
 	color: black !important;
 	font-size: 60% !important;	
@@ -235,15 +243,15 @@ footer {
 }
 
 /* slidebar */
-.slide {
-	background-color: #383838;
-}
+/* .slide { */
+	/* background-color: #383838; */
+/* } */
 .carousel {
 	margin-top: 3%;
 	margin-bottom: 3%;
-	border: solid #383838;
-	border-width: 1%;
-	width: 70%;
+	/* border: solid #383838; */
+	/* border-width: 1%; */
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
